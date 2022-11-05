@@ -1,0 +1,611 @@
+<html>
+ <head>
+     <title> table </title>
+ </head>
+
+ <body background="D:\homework\web\laba2\phonk.jpg" text=#2F4F4F>
+<h2 align = "left"> Военная техника СССР </h2>
+<h2 align = "left"> <a href="D:\homework\web\laba2\first.html">Машины войны</a> </h2>
+<h2 align = "left"> <a href="D:\homework\web\laba2\thirst.html">Список всей техники</a> </h2>
+<hr width="100%">
+<details>
+  <summary> График </summary>
+<form>
+  <p>
+    Значение по оси Ox:<br>
+    <input  type="radio"  name="type" value="Вид техники"> Вид техники
+    <input  type="radio"  name="type" value="Тип техники"> Тип техники <br>
+    Результат:<br>
+<input type="checkbox" name="stats" value="0"> Наибольшая масса <br>
+  <input type="checkbox" name="stats" value="1"> Наименьшая масса <br>
+  <input type="checkbox" name="stats" value="2"> min год выпуска <br>
+  <input type="checkbox" name="stats" value="3"> max год выпуска
+  </p>
+<input type="submit" value="Построить">
+</form>
+   тут будет график
+</details>
+<details>
+  <summary> Фильтр </summary>
+<form>
+  <p>
+    <input type="text" size="30" placeholder="Название техники">
+  </p>
+  <p>
+    <input type="text" size="30" placeholder="Вид техники">
+  </p>
+  <p>
+    <input type="text" size="30" placeholder="Тип техники">
+  </p>
+  <p>
+    <input type="text" size="30" placeholder="Год выпуска">
+  </p>
+  <p>
+    <input type="text" size="30" placeholder="Масса, min">
+    <input type="text" size="30" placeholder="Масса, max">
+  </p>
+  <p>
+    <input type="text" size="30" placeholder="Скорость, min">
+    <input type="text" size="30" placeholder="Скорость, max">
+  </p>
+  <p>
+    <input type="text" size="30" placeholder="Экипаж">
+  </p>
+  <p>
+    <input type="submit" value="Фильтр">
+    <input type="reset" value="Очистить">
+  </p>
+</form>
+   тут будет фильтр
+</details>
+<details>
+  <summary> Сортировка </summary>
+  <form>
+  <p>
+ Первый уровень: 
+<select name="task">
+ <option value="0" selected> Нет </option>
+ <option value="1"> Год выпуска </option>
+ <option value="2"> Макс. скорость </option>
+ <option value="3"> Экипаж </option>
+</select>
+  </p>
+<p>
+ Второй уровень: 
+<select name="task">
+ <option value="0" selected> Нет </option>
+ <option value="1"> Год выпуска </option>
+ <option value="2"> Макс. скорость </option>
+ <option value="3"> Экипаж </option>
+</select>
+  </p>
+<p>
+ Третий уровень: 
+<select name="task">
+ <option value="0" selected> Нет </option>
+ <option value="1"> Год выпуска </option>
+ <option value="2"> Макс. скорость </option>
+ <option value="3"> Экипаж </option>
+</select>
+  </p>
+<input type="submit" value="Сортировать">
+  </form>
+   тут будет сортировка
+</details>
+<hr width="100%">
+<table border=2 cellpadding=5 cellspacing=0 background=https://stepik.org/media/attachments/course/114064/back_2.jpg bordercolor=#808080>
+    <tr>
+        <td>Название</td>
+        <td>Вид техники</td>
+	<td>Тип техники</td>
+        <td>Год выпуска</td>
+        <td>Масса</td>
+        <td>Макс. скорость, км/ч </td>
+  	<td>Экипаж, чел </td>
+    </tr>
+    <tr>
+	<!-- 1 -->
+        <td>Т-34-1940</td>
+        <td>Наземный</td>
+        <td>Средний танк</td>
+        <td>1940</td>
+        <td>25,6 т. </td>
+ 	<td>49 км/ч </td>
+	<td>4 чел. </td>
+    </tr>
+    <tr>
+	<!-- 2 -->
+        <td>Т-34-1941</td>
+        <td>Наземный</td>
+        <td>Средний танк</td>
+        <td>1941</td>
+        <td>28,3 т. </td>
+ 	<td>49 км/ч </td>
+	<td>4 чел. </td>
+    </tr>
+    <tr>
+	<!-- 3 -->
+        <td>Т-34-1942</td>
+        <td>Наземный</td>
+        <td>Средний танк</td>
+        <td>1942</td>
+        <td>30 т. </td>
+ 	<td>49 км/ч </td>
+	<td>4 чел. </td>
+    </tr>    
+    <tr>
+	<!-- 4 -->
+        <td>Т-34Э СТЗ</td> 
+        <td>Наземный</td>
+        <td>Средний танк</td>
+        <td>1941</td>
+        <td>29.5 т. </td>
+ 	<td>49 км/ч </td>
+	<td>4 чел. </td>
+    </tr>    
+    <tr>
+	<!-- 5 -->
+        <td>Т-34-57</td> 
+        <td>Наземный</td>
+        <td>Средний танк</td>
+        <td>1943</td>
+        <td>28.3 т. </td>
+ 	<td>49 км/ч </td>
+	<td>4 чел. </td>
+    </tr>    
+	<!-- asdasdas -->  
+<tr>
+<!-- 6 -->
+<td>Т-34-57(1943)</td>
+<td>Наземный</td>
+<td>Средний танк</td>
+<td>1943</td>
+<td>  30 т.  </td>
+<td>  49 км/ч  </td>
+<td>  4 чел.  </td>
+</tr>
+<tr>
+<!-- 7 -->
+<td>Т-34-85(Д-5Т)</td>
+<td>Наземный</td>
+<td>Средний танк</td>
+<td>1944</td>
+<td>  32 т.  </td>
+<td>  55 км/ч  </td>
+<td>  4 чел.  </td>
+</tr>
+<tr>
+<!-- 8 -->
+<td>Т-34-85</td>
+<td>Наземный</td>
+<td>Средний танк</td>
+<td>1944</td>
+<td>  32.2 т.  </td>
+<td> 55 км/ч  </td>
+<td>  5 чел.  </td>
+</tr>
+<tr>
+<!-- 9 -->
+<td>Т-34-85Э</td>
+<td>Наземный</td>
+<td>Средний танк</td>
+<td>1944</td>
+<td>  32 т.  </td>
+<td>  55 км/ч  </td>
+<td>  5 чел.  </td>
+</tr>
+<tr>
+<!-- 10 -->
+<td>КВ-1(Л-11)</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1939</td>
+<td> 46 т.  </td>
+<td> 35 км/ч  </td>
+<td> 5 чел.  </td>
+</tr>
+<tr>
+<!-- 11 -->
+<td>КВ-2</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1939</td>
+<td>  52.4 т.  </td>
+<td>  35 км/ч  </td>
+<td>  6 чел.  </td>
+</tr>
+<tr>
+<!-- 12 -->
+<td>КВ-1С</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1942</td>
+<td> 42.5 т.  </td>
+<td> 45 км/ч  </td>
+<td>  5 чел.  </td>
+</tr>
+<tr>
+<!-- 13 -->
+<td>КВ-1(ЗиС-5)</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1941</td>
+<td> 46.4 т.  </td>
+<td>  35 км/ч  </td>
+<td> 5 чел.  </td>
+</tr>
+<tr>
+<!-- 14 -->
+<td>КВ-85</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1943</td>
+<td> 46 т.  </td>
+<td> 35 км/ч  </td>
+<td> 4 чел.  </td>
+</tr>
+<tr>
+<!-- 15 -->
+<td>ИС-1</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1944</td>
+<td> 44 т.  </td>
+<td> 38 км/ч  </td>
+<td> 4 чел.  </td>
+</tr>
+<tr>
+<!-- 16 -->
+<td>ИС-2</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1943</td>
+<td>  46 т.  </td>
+<td> 38 км/ч  </td>
+<td> 4 чел.  </td>
+</tr>
+<tr>
+<!-- 17 -->
+<td>ИС-2</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1944</td>
+<td>  46.2 т.  </td>
+<td> 38 км/ч  </td>
+<td> 4 чел.  </td>
+</tr>
+<tr>
+<!-- 18 -->
+<td>ИС-3</td>
+<td>Наземный</td>
+<td>Тяжелый танк</td>
+<td>1945</td>
+<td> 48 т.  </td>
+<td>  41 км/ч  </td>
+<td> 4 чел.  </td>
+</tr>
+<tr>
+<!-- 19 -->
+<td>СУ-76М</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1942</td>
+<td> 10.5 т.  </td>
+<td> 31 км/ч  </td>
+<td> 4 чел.  </td>
+</tr>
+<tr>
+<!-- 20 -->
+<td>СУ-122</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1942</td>
+<td> 30.9 т.  </td>
+<td>  55 км/ч  </td>
+<td>  5 чел.  </td>
+</tr>
+<tr>
+<!-- 21 -->
+<td>ЗиС-30</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1941</td>
+<td>  4 т.  </td>
+<td>  43 км/ч  </td>
+<td>  4 чел.  </td>
+</tr>
+<tr>
+<!-- 22 -->
+<td>СУ-152</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1943</td>
+<td> 45.5 т.  </td>
+<td> 43 км/ч  </td>
+<td> 5 чел.  </td>
+</tr>
+<tr>
+<!-- 23 -->
+<td>ИСУ-152</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1943</td>
+<td> 46 т.  </td>
+<td> 38 км/ч  </td>
+<td> 5 чел.  </td>
+</tr>
+<tr>
+<!-- 24 -->
+<td>СУ-85</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1943</td>
+<td> 29.6 т.  </td>
+<td> 55 км/ч  </td>
+<td>  4 чел.  </td>
+</tr>
+<tr>
+<!-- 25 -->
+<td>ИСУ-122</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1944</td>
+<td>  46 т.  </td>
+<td> 38 км/ч  </td>
+<td>  5 чел.  </td>
+</tr>
+<tr>
+<!-- 26 -->
+<td>ИСУ-122С</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1944</td>
+<td> 46 т.  </td>
+<td>  38 км/ч  </td>
+<td> 5 чел.  </td>
+</tr>
+<tr>
+<!-- 27 -->
+<td>СУ-100</td>
+<td>Наземный</td>
+<td>САУ</td>
+<td>1944</td>
+<td> 31.6 т.  </td>
+<td> 50 км/ч  </td>
+<td> 4 чел.  </td>
+</tr>
+<tr>
+<!-- 28 -->
+<td>Т-60</td>
+<td>Наземный</td>
+<td>Легкий танк</td>
+<td>1941</td>
+<td> 5.8 т.  </td>
+<td> 44 км/ч  </td>
+<td> 2 чел.  </td>
+</tr>
+<tr>
+<!-- 29 -->
+<td>Т-70</td>
+<td>Наземный</td>
+<td>Легкий танк</td>
+<td>1942</td>
+<td> 9.8 т.  </td>
+<td> 46 км/ч  </td>
+<td>  2 чел.  </td>
+</tr>
+<tr>
+<!-- 30 -->
+<td>Т-80</td>
+<td>Наземный</td>
+<td>Легкий танк</td>
+<td>1942</td>
+<td>  11.6 т.  </td>
+<td>  43 км/ч  </td>
+<td>  3 чел.  </td>
+</tr>
+<tr>
+<!-- 31 -->
+<td>ЯК-1</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1940</td>
+<td> 3 т.  </td>
+<td>  577 км/ч  </td>
+<td> 1 чел.  </td>
+</tr>
+<tr>
+<!-- 32 -->
+<td>ЯК-1Б</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1942</td>
+<td> 3 т.  </td>
+<td>  592 км/ч  </td>
+<td>  1 чел.  </td>
+</tr>
+<tr>
+<!-- 33 -->
+<td>МиГ-3</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1940</td>
+<td>  4 т.  </td>
+<td>  640 км/ч  </td>
+<td>  1 чел.  </td>
+</tr>
+<tr>
+<!-- 34 -->
+<td>ЛаГГ-3</td>
+<td>Наземный</td>
+<td>Истребитель</td>
+<td>1941</td>
+<td>  3 т.  </td>
+<td>  566 км/ч  </td>
+<td>  1 чел.  </td>
+</tr>
+<tr>
+<!-- 35 -->
+<td>Ла-5</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1942</td>
+<td> 3 т.  </td>
+<td> 580 км/ч  </td>
+<td>  1 чел.  </td>
+</tr>
+<tr>
+<!-- 36 -->
+<td>Ла-5Ф</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1942</td>
+<td> 3 т.  </td>
+<td> 593 км/ч  </td>
+<td> 1 чел.  </td>
+</tr>
+<tr>
+<!-- 37 -->
+<td>Ла-5ФН</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1943</td>
+<td> 3 т.  </td>
+<td> 620 км/ч  </td>
+<td>  чел.  </td>
+</tr>
+<tr>
+<!-- 38 -->
+<td>Як-9</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1942</td>
+<td> 3 т.  </td>
+<td> 577 км/ч  </td>
+<td>  чел.  </td>
+</tr>
+<tr>
+<!-- 39 -->
+<td>Як-9Т</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1943</td>
+<td> 3 т.  </td>
+<td> 593 км/ч  </td>
+<td>  1 чел.  </td>
+</tr>
+<tr>
+<!-- 40 -->
+<td>Як-3</td>
+<td>Воздушный</td>
+<td>Истребитель</td>
+<td>1944</td>
+<td> 3 т.  </td>
+<td> 650 км/ч  </td>
+<td> 1 чел.  </td>
+</tr>
+<tr>
+<!-- 41 -->
+<td>Ил-2</td>
+<td>Воздушный</td>
+<td>Штурмовик</td>
+<td>1941</td>
+<td> 6 т.  </td>
+<td> 423 км/ч  </td>
+<td>  1 чел.  </td>
+</tr>
+<tr>
+<!-- 42 -->
+<td>Ил-2</td>
+<td>Воздушный</td>
+<td>Штурмовик</td>
+<td>1942</td>
+<td> 6 т.  </td>
+<td> 423 км/ч  </td>
+<td> 1 чел.  </td>
+</tr>
+<tr>
+<!-- 43 -->
+<td>Ил-2М</td>
+<td>Воздушный</td>
+<td>Штурмовик</td>
+<td>1943</td>
+<td> 6 т.  </td>
+<td> 397 км/ч  </td>
+<td> 2 чел.  </td>
+</tr>
+<tr>
+<!-- 44 -->
+<td>Ил-10</td>
+<td>Воздушный</td>
+<td>Штурмовик</td>
+<td>1944</td>
+<td> 7 т.  </td>
+<td> 551 км/ч  </td>
+<td> 2 чел.  </td>
+</tr>
+<tr>
+<!-- 45 -->
+<td>ТБ-3М</td>
+<td>Воздушный</td>
+<td>Тяжелый бомбардировщик</td>
+<td>1931</td>
+<td> 20 т.  </td>
+<td> 185 км/ч  </td>
+<td> 7 чел.  </td>
+</tr>
+<tr>
+<!-- 46 -->
+<td>Пе-2</td>
+<td>Воздушный</td>
+<td>Фронтовой бомбардировщик</td>
+<td>1940</td>
+<td> 9 т.  </td>
+<td> 540 км/ч  </td>
+<td>  3 чел.  </td>
+</tr>
+<tr>
+<!-- 47 -->
+<td>Ер-2</td>
+<td>Воздушный</td>
+<td>Дальний бомбардировщик</td>
+<td>1940</td>
+<td> 14 т.  </td>
+<td> 445 км/ч  </td>
+<td> 5 чел.  </td>
+</tr>
+<tr>
+<!-- 48 -->
+<td>Пе-8</td>
+<td>Воздушный</td>
+<td>Дальний бомбардировщик</td>
+<td>1943</td>
+<td> 36 т.  </td>
+<td> 422 км/ч  </td>
+<td> 7 чел.  </td>
+</tr>
+<tr>
+<!-- 49 -->
+<td>Ту-2</td>
+<td>Воздушный</td>
+<td>Фронтовой бомбардировщик</td>
+<td>1943</td>
+<td> 12 т.  </td>
+<td> 547 км/ч  </td>
+<td>  4 чел.  </td>
+</tr>
+<tr>
+<!-- 50 -->
+<td>Ту-4</td>
+<td>Воздушный</td>
+<td>Дальний бомбардировщик</td>
+<td>1949</td>
+<td>  64 т.  </td>
+<td> 641 км/ч  </td>
+<td> 7 чел.  </td>
+</tr>
+
+    </table>
+</body>
+</html>
+
